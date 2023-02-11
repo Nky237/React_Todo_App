@@ -26,6 +26,7 @@ body{
 .text li{
     background-color: aliceblue;
     width: 70%;
+    list-style: none;
 }
 .text{
     display: flex;
