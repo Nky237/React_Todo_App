@@ -1,4 +1,6 @@
 import React from 'react'
+import { AiFillDelete } from 'react-icons/ai';
+import { GrCheckboxSelected, GrCheckbox } from 'react-icons/gr';
 
 const Todo = ({todo, removeTodo, toggleComplete}) => {
   function handleCheckboxClick() {
@@ -11,14 +13,16 @@ const Todo = ({todo, removeTodo, toggleComplete}) => {
   return (
     <div style= {{display:"flex"}} className='text'>
         <li style={{color:"black", textDecoration: todo.completed ? "line-through": null,
-      fontSize:'30px'
+      fontSize:'24px', padding:'10px 15px'
       }}>
             {todo.task}
         </li>
         <input type="checkbox"
         checked={todo.completed}
         onClick={handleCheckboxClick} />
-        <button  onClick={handleRemoveClick}>X</button>
+        <AiFillDelete onClick={handleRemoveClick} 
+        style={{fontSize:'50px', color:'red'}}
+        />
     </div>
   )
 }

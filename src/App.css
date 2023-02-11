@@ -3,11 +3,17 @@ body{
     color: white;
 }
 .App{
-    border: 1px solid black;
-    width: 30%;
+    width: 27%;
     margin: auto;
-    height: 50rem;
+    height: 47rem;
     background-color: black;
+    border-radius: 30px;
+    padding-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+h1{
+    text-align: center;
 }
 .form input, .form button{
     height: 50px;
@@ -25,19 +31,18 @@ body{
 }
 .text li{
     background-color: aliceblue;
-    width: 70%;
+    width: 60%;
     list-style: none;
 }
 .text{
     display: flex;
     justify-content: space-between;
     width: 90%;
-    border: 1px solid white;
     margin: auto;
 }
-.text button{
-    height: 40px;
-    width: 40px;
+.text i{
+font-size: 40px;
+color: red;
 }
 input[type='checkbox']{
     height: 40px;
