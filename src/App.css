@@ -1,8 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: #D19C6A;
     color: white;
+    max-height: 100vh;
 }
 .App{
+    overflow-y: hidden;
     width: 27%;
     position: absolute;
     top: 50%;
@@ -35,6 +42,7 @@ h1{
     font-size: 21px;
     background-color: #D19C6A;
     border-radius: 7px;
+    cursor: pointer;
 }
 .text li{
     color: white;
@@ -60,4 +68,29 @@ input[type='checkbox']{
 ul{
     margin: 0 !important;
     padding: 0 !important;
+}
+@media only screen and (max-width: 1024px){
+.App{
+    height: 30rem;
+    width: 37%;
+}
+.form input{
+    width: 65%;
+}
+.form button{
+    padding: 6px;
+    width: 27%;
+}
+}
+@media only screen and (max-width: 540px){
+.App{
+    width:90%;
+}
+.form input{
+    width: 100%;
+}
+.form button{
+    width: 40%;
+    margin-top: 10px;
+}
 }
