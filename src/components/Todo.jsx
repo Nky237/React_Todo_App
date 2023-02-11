@@ -12,7 +12,7 @@ const Todo = ({todo, removeTodo, toggleComplete}) => {
   }
   return (
     <div style= {{display:"flex"}} className='text'>
-        <li style={{color:"black", textDecoration: todo.completed ? "line-through": null,
+        <li style={{textDecoration: todo.completed ? "line-through": null,
       fontSize:'24px', padding:'10px 15px'
       }}>
             {todo.task}
@@ -21,7 +21,7 @@ const Todo = ({todo, removeTodo, toggleComplete}) => {
         checked={todo.completed}
         onClick={handleCheckboxClick} />
         <AiFillDelete onClick={handleRemoveClick} 
-        style={{fontSize:'50px', color:'red'}}
+        style={{fontSize:'40px', color:'red', paddingTop:'10px'}}
         />
     </div>
   )
