@@ -1,0 +1,48 @@
+body{
+    background-color: orange;
+    color: white;
+}
+.App{
+    border: 1px solid black;
+    width: 30%;
+    margin: auto;
+    height: 50rem;
+    background-color: black;
+}
+.form input, .form button{
+    height: 50px;
+}
+.form{
+    width: 90%;
+    margin: auto;
+}
+.form input{
+    width: 70%;
+}
+.form button{
+    width: 20%;
+    margin-left: 20px;
+}
+.text li{
+    background-color: aliceblue;
+    width: 70%;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border: 1px solid white;
+    margin: auto;
+}
+.text button{
+    height: 40px;
+    width: 40px;
+}
+input[type='checkbox']{
+    height: 40px;
+    width: 40px;
+}
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
